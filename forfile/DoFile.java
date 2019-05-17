@@ -1,6 +1,10 @@
 package forfile;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.*;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -222,6 +226,28 @@ public class DoFile {
             fw.write(content);
             fw.close();
         }
+    }
+
+    public static Image readImage(String path){
+        /**
+         * @title readImage
+         * @description 通过文件地址 获得图片
+         * @author BORBER
+         * @param: path
+         * @updateTime 2019/5/17 17:20
+         * @return: java.awt.Image
+         * @throws IOException
+         */
+        BufferedImage BI = null;
+        try{
+            URL u = DoFile.class.getClassLoader().getResource(path);
+            if(u != null){
+                BI = ImageIO.read(u);
+            }
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        return BI;
     }
 
 }

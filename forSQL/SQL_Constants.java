@@ -41,6 +41,7 @@ public class SQL_Constants {
          */
 
         try {
+            CONN = null;
             Class.forName(MYSQL_CLASS);
             CONN = DriverManager.getConnection(MYSQL_URL,MYSQL_NAME,MYSQL_PASSWORD);
             if(CONN != null){
@@ -53,5 +54,5 @@ public class SQL_Constants {
         }
     }
 
-    
+
 }
