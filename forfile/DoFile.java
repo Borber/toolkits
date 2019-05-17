@@ -7,6 +7,10 @@ import java.util.List;
 
 /**
  * @author BORBER
+ * @version 1.0.0
+ * @ClassName SQL_Constants.java
+ * @Description 进行文本操作
+ * @createTime 2019年05月17日 16:44
  */
 
 public class DoFile {
@@ -15,7 +19,7 @@ public class DoFile {
         /**
          *@title creatFile
          * @description 创建文件
-         * @author admin
+         * @author BORBER
          * @param: filepath
          * @updateTime 2019/5/17 15:42
          * @return: boolean
@@ -39,7 +43,7 @@ public class DoFile {
         /**
          * @title createDirectory
          * @description 创建文件夹
-         * @author admin
+         * @author BORBER
          * @param: directory
          * @updateTime 2019/5/17 15:44
          * @return: boolean
@@ -59,7 +63,7 @@ public class DoFile {
         /**
          * @title deleteFiles
          * @description 删除文件
-         * @author admin
+         * @author BORBER
          * @param: filepath
          * @updateTime 2019/5/17 15:44
          * @return: boolean
@@ -79,7 +83,7 @@ public class DoFile {
         /**
          * @title deleteDirectory
          * @description 删除文件夹 并且 递归删除其下的所有文件及文件夹
-         * @author admin
+         * @author BORBER
          * @param: filepath
          * @updateTime 2019/5/17 15:44
          * @return: boolean
@@ -106,7 +110,7 @@ public class DoFile {
         /**
          * @title readFileByBytes
          * @description 以字节为单位读取文件 一般用于二进制文件
-         * @author admin
+         * @author BORBER
          * @param: filepath
          * @updateTime 2019/5/17 15:45
          * @return: java.lang.String
@@ -137,7 +141,7 @@ public class DoFile {
         /**
          * @title readFileByChars
          * @description 以字符为单位读取文件 一般用于文本文件
-         * @author admin
+         * @author BORBER
          * @param: filepath
          * @updateTime 2019/5/17 15:45
          * @return: java.lang.String
@@ -170,7 +174,7 @@ public class DoFile {
         /**
          * @title readFileByLine
          * @description 以行为单位读取文件 一般用于 各行独立的文件
-         * @author admin
+         * @author BORBER
          * @param: filepath
          * @updateTime 2019/5/17 15:49
          * @return: java.util.List<java.lang.String>
@@ -206,7 +210,7 @@ public class DoFile {
          * @title writeFileByFileWriter
          * @description 字符串写入文件的几个类中，FileWriter效率最高，BufferedOutputStream次之，FileOutputStream最差
          * 故而只使用Writer
-         * @author admin 
+         * @author BORBER
          * @param: filePath
          * @param: content
          * @updateTime 2019/5/17 16:04 
@@ -219,4 +223,5 @@ public class DoFile {
             fw.close();
         }
     }
+
 }
