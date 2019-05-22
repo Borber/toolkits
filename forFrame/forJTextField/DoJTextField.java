@@ -3,6 +3,8 @@ package forFrame.forJTextField;
 import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.PlainDocument;
+import java.io.BufferedReader;
+import java.util.Scanner;
 
 /**
  * @author BORBER
