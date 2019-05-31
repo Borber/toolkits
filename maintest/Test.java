@@ -1,4 +1,9 @@
-public class test{
+package maintest;
+
+/**
+ * @author x
+ */
+public class Test{
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
