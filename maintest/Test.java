@@ -1,10 +1,10 @@
 package maintest;
 
-/**
- * @author BORBER
- */
-public class Test{
+
+import forfile.fileChooserLoader;
+
+public class Test {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        new fileChooserLoader();
     }
 }
