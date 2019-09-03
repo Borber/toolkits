@@ -162,10 +162,24 @@ public class MyArrayList {
         return removedItem;
     }
 
+
+    /**
+    * @Description: 返回迭代器
+    * @return: java.util.Iterator<java.lang.Integer>
+    * @Author: BORBER
+    * @Date: 2019/9/3
+    */
     public java.util.Iterator<Integer> iterator(){
         return new ArrayListIterator();
     }
 
+
+    /**
+    * @Description: 迭代器接口
+    * @return:
+    * @Author: BORBER
+    * @Date: 2019/9/3
+    */
     private class ArrayListIterator implements java.util.Iterator<Integer>{
 
         private int current = 0;
