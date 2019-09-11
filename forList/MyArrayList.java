@@ -7,13 +7,13 @@ package forList;
  * @create: 2019-09-03 15:47
  * @version: 1.0
  **/
-class MyArrayList {
+public class MyArrayList {
     private static final int DEFAULT_CAPACITY = 10;
     private int theSize;
 
 
 
-    class Doub{
+    static class Doub{
         int modulus;
         int index;
         Doub(int modulus,int index){
@@ -110,7 +110,7 @@ class MyArrayList {
             throw new ArrayIndexOutOfBoundsException();
         }
         Doub old = theItems[idx];
-        theItems[idx] = new Doub(a,b);
+        theItems[idx] = new Doub(a, b);
         return old;
     }
 
@@ -152,7 +152,7 @@ class MyArrayList {
         if (size() - idx >= 0) {
             System.arraycopy(theItems, idx, theItems, idx + 1, size() - idx);
         }
-        theItems[idx] = new Doub(a,b);
+        theItems[idx] = new Doub(a, b);
         ++theSize;
     }
 
