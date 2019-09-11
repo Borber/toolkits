@@ -24,10 +24,17 @@ import java.util.Scanner;
 public class UnivariatePolynomial {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        MyArrayList list = new MyArrayList();
-        list.add(1,2);
-        System.out.println(list.get(0).modulus);
-        System.out.println(list.get(0).index);
+        MyArrayList list1 = new MyArrayList();
+        MyArrayList list2 = new MyArrayList();
+        int line1 = s.nextInt();
+        for (int i=0;i < line1; ++i){
+            list1.add(s.nextInt(),s.nextInt());
+        }
+        int line2 = s.nextInt();
+        for (int i=0;i < line2;++i){
+            list2.add(s.nextInt(),s.nextInt());
+        }
+        
     }
 }
 
