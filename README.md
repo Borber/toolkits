@@ -10,6 +10,8 @@
 3. JFrame操作
    - 限制JTextField输入长度
    - JTable 的刷新与回显
+4. List
+    - ArrayList 的实现   *2019.9.11*
 
 
 
