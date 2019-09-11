@@ -2,9 +2,11 @@
   <dictionary name="BORBER">
     <words>
       <w>borber</w>
+      <w>doub</w>
       <w>formatname</w>
       <w>javascreen</w>
       <w>myfile</w>
+      <w>univariate</w>
     </words>
   </dictionary>
 </component>
